@@ -5,34 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Luffa Privacy Dashboard Widget</title>
   <link rel="stylesheet" href="style.css">
-  <!-- Google Fonts (optional – for better typography) -->
+  <!-- Google Fonts for better typography (optional but recommended) -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
-    <!-- Logos Header -->
+    <!-- Logos Header – using raw GitHub URLs from your repo -->
     <div class="logos">
-      <img src="https://luffa.io/logo.png" alt="Luffa Logo" class="logo luffa-logo">
-      <img src="https://endlessprotocol.io/logo.png" alt="Endless Logo" class="logo endless-logo">
+      <img src="https://raw.githubusercontent.com/duchth1993/luffa-privacy-dashboard-widget/main/luffa-logo.png" alt="Luffa Logo" class="logo luffa-logo">
+      <img src="https://raw.githubusercontent.com/duchth1993/luffa-privacy-dashboard-widget/main/endless-logo.png" alt="Endless Logo" class="logo endless-logo">
     </div>
 
     <h1>Luffa Privacy Dashboard</h1>
 
     <div class="stats">
       <div class="stat">
-        <span class="label">E2EE Messages</span>
+        <span class="label" title="End-to-End Encrypted messages – only you and recipient can read">E2EE Messages</span>
         <span class="value" id="e2ee-count">0</span>
       </div>
       <div class="stat">
-        <span class="label">Relay Nodes Used</span>
+        <span class="label" title="Decentralized relay nodes used for message storage – no single point of failure">Relay Nodes Used</span>
         <span class="value" id="relay-count">0</span>
       </div>
       <div class="stat">
-        <span class="label">DID Status</span>
+        <span class="label" title="Decentralized Identifier – your self-owned identity on Endless">DID Status</span>
         <span class="value" id="did-status">Not Verified</span>
       </div>
       <div class="stat highlight">
-        <span class="label">Privacy Score</span>
+        <span class="label" title="Overall privacy score based on E2EE, relays, and DID (higher = better)">Privacy Score</span>
         <span class="value" id="privacy-score">0%</span>
       </div>
     </div>
@@ -42,7 +42,7 @@
     <!-- Footer Credit -->
     <footer>
       Built for Endless Bi-Weekly Developer Contribution Program<br>
-      <a href="https://github.com/[your-username]/luffa-privacy-dashboard-widget" target="_blank">
+      <a href="https://github.com/duchth1993/luffa-privacy-dashboard-widget" target="_blank">
         GitHub Repo
       </a>
       • #EndlessDev
