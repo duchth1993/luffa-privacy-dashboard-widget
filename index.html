@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Luffa Privacy Dashboard Widget</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Luffa Privacy Dashboard</h1>
+    <div class="stats">
+      <div class="stat">
+        <span class="label">E2EE Messages</span>
+        <span class="value" id="e2ee-count">0</span>
+      </div>
+      <div class="stat">
+        <span class="label">Relay Nodes Used</span>
+        <span class="value" id="relay-count">0</span>
+      </div>
+      <div class="stat">
+        <span class="label">DID Status</span>
+        <span class="value" id="did-status">Not Verified</span>
+      </div>
+      <div class="stat highlight">
+        <span class="label">Privacy Score</span>
+        <span class="value" id="privacy-score">0%</span>
+      </div>
+    </div>
+    <button onclick="refreshStats()">Refresh Stats</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
