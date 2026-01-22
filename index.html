@@ -5,14 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Luffa Privacy Dashboard Widget</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts (optional – for better typography) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
+    <!-- Logos Header -->
+    <div class="logos">
+      <img src="https://luffa.io/logo.png" alt="Luffa Logo" class="logo luffa-logo">
+      <img src="https://endlessprotocol.io/logo.png" alt="Endless Logo" class="logo endless-logo">
+    </div>
+
     <h1>Luffa Privacy Dashboard</h1>
-    <div style="text-align: center; margin-bottom: 20px;">
-  <img src="https://example.com/luffa-logo.png" alt="Luffa Logo" style="height: 40px; margin-right: 10px;">
-  <img src="https://example.com/endless-logo.png" alt="Endless Logo" style="height: 40px;">
-</div>
+
     <div class="stats">
       <div class="stat">
         <span class="label">E2EE Messages</span>
@@ -31,7 +36,17 @@
         <span class="value" id="privacy-score">0%</span>
       </div>
     </div>
+
     <button onclick="refreshStats()">Refresh Stats</button>
+
+    <!-- Footer Credit -->
+    <footer>
+      Built for Endless Bi-Weekly Developer Contribution Program<br>
+      <a href="https://github.com/[your-username]/luffa-privacy-dashboard-widget" target="_blank">
+        GitHub Repo
+      </a>
+      • #EndlessDev
+    </footer>
   </div>
 
   <script src="script.js"></script>
